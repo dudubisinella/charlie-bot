@@ -1,4 +1,5 @@
 const { Events } = require("discord.js");
+<<<<<<< HEAD
 const axios = require("axios");
 
 const { OPENAI_API_KEY, CHAT_GPT_CHANNEL_ID, CHANNEL_BOT_ID } = process.env;
@@ -9,6 +10,12 @@ client.on(Events.MessageCreate, async (message) => {
   if (message.author.bot) return;
 
   if (message.content === "!comandos" && message.channelId === CHANNEL_BOT_ID) {
+=======
+const client = require("./client-ready");
+
+client.on(Events.MessageCreate, async (message) => {
+  if (message.content === "!comandos") {
+>>>>>>> f94f927e57cdbb4954ba9047a881d784f490df25
     const embed = {
       title: "Lista de comandos",
       description: `
@@ -29,6 +36,7 @@ client.on(Events.MessageCreate, async (message) => {
       })
       .catch(console.error);
   }
+<<<<<<< HEAD
 
   if (message.channel.id === CHAT_GPT_CHANNEL_ID) {
     const userQuestion = message.content;
@@ -55,4 +63,6 @@ client.on(Events.MessageCreate, async (message) => {
       );
     }
   }
+=======
+>>>>>>> f94f927e57cdbb4954ba9047a881d784f490df25
 });
