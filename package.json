@@ -5,21 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-<<<<<<< HEAD
     "start": "node src/index.js",
-=======
-    "start": "nodemon src/index.js",
->>>>>>> f94f927e57cdbb4954ba9047a881d784f490df25
     "deploy:commands": "node src/discord/deploy-commands.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "axios": "^1.6.8",
-=======
->>>>>>> f94f927e57cdbb4954ba9047a881d784f490df25
     "cors": "^2.8.5",
     "discord.js": "^14.15.2",
     "dotenv": "^16.4.5",
