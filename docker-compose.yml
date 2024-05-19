@@ -1,0 +1,12 @@
+version: "2"
+services:
+  app:
+    container_name: "charlie_bot"
+    restart: always
+    build: .
+    env_file:
+      - path: ./.env
+        required: true
+    ports:
+      - "3333:3333"
+    command: npm start
